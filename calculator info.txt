@@ -1,0 +1,27 @@
+user information
+
+python code for simple calculator programe with different modes such as 
+      1. basic 
+      2. scintfic
+      3. phy_qunatity 
+      4. measurments 
+    
+Basic Mode 
+    in basic mode user can calculate simple operations like addition substraction divison and multiplication
+
+    as well they can calculate diff things like percentage average mean mode
+
+
+Scientific Mode 
+    in this mode user can calculate diff values like all trignometric ratios
+    logrithmic values exponential square and roots of a number
+
+phy_qunatity
+    in this user can calculate different physical qunatites used in physics and chemistry such as speed accelaration etc
+
+measurments
+     in this mode user can calculate the diff measurments such as volume area parameter of a geometrical shape 2d or 3d such circle rectangle rhombus etc
+
+
+
+5+7-9+8
