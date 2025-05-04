@@ -7,20 +7,26 @@ def trig2():
         print("Enter angle")
         ang=int(input(tr))
         print()
-        rd2=math.radians(ang)
+        rd=math.radians(ang)
         if tr=="sin":
-            print("sin",ang,"=",math.sin(rd2))
+            print("sin",ang,"=",math.sin(rd))
+            return math.sin(rd)
         elif tr=="cos":
-            print("cos",ang,"=",math.cos(rd2))
+            print("cos",ang,"=",math.cos(rd))
+            return math.cos(rd)
         elif tr=="tan":
-            print("tan",ang,"=",math.tan(rd2))
+            print("tan",ang,"=",math.tan(rd))
+            return math.tan(rd)
         elif tr=="sec":
-            print("sec",ang,"=",math.sec(rd2))
+            print("sec",ang,"=",1/math.cos(rd))
+            return 1/math.cos(rd)
         elif tr=="cot":
-            print("cot",ang,"=",math.cot(rd2))
+            print("cot",ang,"=",1/math.tan(rd))
+            return 1/math.tan(rd)
         elif tr=="cosec":
-            print("cosec",ang,"=",math.cosec(rd2))
-        return rd2
+            print("cosec",ang,"=",1/math.sin(rd))
+            return 1/math.sin(rd) 
+            
     else:
         print("Invalid Input")
         trig2()
@@ -30,7 +36,8 @@ def tmathx(m=[]):
     b=sec()
     c=trig2()
     d=op(a,c,b)
-    print('ans =',d)
+    print('ans =',op(a,c,b))
+    print(a,b,c)
     data(d,l1)
     t_outro()
 
@@ -38,8 +45,9 @@ def t_outro():
     if exit()==True:
         b=sec()
         c=trig2()
-        e=op(l1[0],c,b)
-        print('ans =',op(l1[0],c,b))
+        e=op(l1[-1],c,b)
+        data(e,l1)
+        print('ans =',op(l1[-1],c,b))
         t_outro()
 
 
@@ -170,17 +178,23 @@ def trig():
         rd=math.radians(ang)
         if tr=="sin":
             print("sin",ang,"=",math.sin(rd))
+            return math.sin(rd)
         elif tr=="cos":
             print("cos",ang,"=",math.cos(rd))
+            return math.cos(rd)
         elif tr=="tan":
             print("tan",ang,"=",math.tan(rd))
+            return math.tan(rd)
         elif tr=="sec":
-            print("sec",ang,"=",math.sec(rd))
+            print("sec",ang,"=",1/math.cos(rd))
+            return 1/math.cos(rd)
         elif tr=="cot":
-            print("cot",ang,"=",math.cot(rd))
+            print("cot",ang,"=",1/math.tan(rd))
+            return 1/math.tan(rd)
         elif tr=="cosec":
-            print("cosec",ang,"=",math.cosec(rd))
-        return rd
+            print("cosec",ang,"=",1/math.sin(rd))
+            return 1/math.sin(rd) 
+            
     else:
         print("Invalid Input")
         trig()
