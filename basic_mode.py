@@ -103,7 +103,7 @@ def msg():
         print()
         print("Returning to main menu...")
         print("SELECT THE MODE")
-        mode() #mode() is not defined merge this to main menu 
+        #mode() #mode() is not defined merge this to main menu 
     elif choice=="yes":
         print("basic mode continues..")
         basic()
